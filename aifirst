@@ -1,0 +1,7 @@
+import ollama
+
+model_name = "llama3.2:latest"
+prompt = "Write a short story about a robot learning to love."
+response = ollama.generate(model = model_name, prompt = prompt)
+
+print(response.response)
